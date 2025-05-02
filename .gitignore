@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+
+# VSCode settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# Large data files (you can customize this)
+*.csv
+*.tsv
+*.xlsx
+*.h5
+*.zip
+
+# Image/video data (optional — remove if you want to keep image files)
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+*.mp4
+*.avi
+
+# Ignore model files
+*.pt
+*.pth
+*.h5
+*.pb
+*.ckpt
+
+
+
