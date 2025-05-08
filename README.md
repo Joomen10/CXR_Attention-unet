@@ -12,7 +12,7 @@ ADD BARE X-RAY AND SEGMENTED X-RAY HERE
 
 ## Cardiothoracic Ratio (CTR)
 The CTR is computed by measuring the width of the chest and the width of the heart. A 'normal CTR,' which would suggest a patient is healthy, is between .42 and .5. Anything greater than .5 suggests a diagnosis of cardiomegaly. 
-
+  
 ## Results 
 Based on the model evalutation, here are our results:
 ### Hyperparameters
