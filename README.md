@@ -18,6 +18,8 @@ Based on the model evalutation, here are our results:
 ### Hyperparameters
 After some hyperparameter tuning, we determined that the best hyperparameters are: `batch_size` = 8 and `learning_rate` = .0001.
 ### Binary Cross Entropy Loss
+ADD GRAPH HERE
+
 Here is the progression of the training and validation losses throughout the training process. Initially, all loss curves drop sharply which indicates that the model was able to learn the basic structure of segmentation fairly quickly.
 
 Losses continue to decline more gradually, suggesting the model is refining it’s understanding of the boundaries we want. The gap between training and validation loss is small which suggests the model is maintaining good generalization. 
