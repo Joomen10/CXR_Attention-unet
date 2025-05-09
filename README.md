@@ -38,25 +38,25 @@ input_size: (512, 512)
 batch_size: 8
 
 #### Training schedule
-Epochs: 30
+Epochs: 30  
 Training/validation/test split: 80 % / 15 % / 5 % 
 
 #### Model architecture
-n_channels: 1 (grayscale input)
-n_classes: 3 (background, lung, heart)
-Encoder feature sizes: [128, 256, 512, 1024]
-Bottleneck channels: 1024→2048
-Attention intermediate channel: half of each decoder feature size (F_int = f // 2)
+n_channels: 1 (grayscale input)  
+n_classes: 3 (background, lung, heart)  
+Encoder feature sizes: [128, 256, 512, 1024]  
+Bottleneck channels: 1024→2048  
+Attention intermediate channel: half of each decoder feature size (F_int = f // 2)  
 #### Optimization
-Optimizer: Adam
-Learning rate (lr): 1 × 10⁻⁴
-Loss function: CrossEntropyLoss
+Optimizer: Adam  
+Learning rate (lr): 1 × 10⁻⁴  
+Loss function: CrossEntropyLoss  
 
 #### W&B logging
 
-log_freq: 100 steps for gradient/parameter logging
-Image‐logging: 4 random val samples per epoch
-Logged metrics: train_loss, val_loss, test_loss, IoU for lung & heart
+log_freq: 100 steps for gradient/parameter logging  
+Image‐logging: 4 random val samples per epoch  
+Logged metrics: train_loss, val_loss, test_loss, IoU for lung & heart  
 
 ### Model Training
 <img width="520" alt="Screenshot 2025-05-08 at 6 06 01 PM" src="https://github.com/user-attachments/assets/d9ec809d-4fff-442a-a314-8328d288a1ab" />
