@@ -11,7 +11,13 @@ Our main objective was to accurately segment and isolate the heart and lungs fro
 <br> [Presentation Slides](https://docs.google.com/presentation/d/1lrFUmw1toBuzCr4wEwi2cEgJF9aRI2ZorvTLPGRc6zQ/edit?usp=sharing)
 
 ## Dataset  
+
+### Chest X-ray Dataset (MIMIC-CXR)
 For training and validation purposes, we used the [MIMIC_CXR](https://physionet.org/content/mimic-cxr/2.1.0/) dataset. This is a publicly available set containing over 370,000 chest x-ray scans corresponding to over 250,000 radiologist studies. We used a random subset of around 500 due to timing constraints, with a train/validation/test split of 80/15/5 which was randomly selected within the subset. In preprocessing, images were all converted to greyscale and resized to a fixed resolution of 512x512 pixels. Normalization and tensor conversion were also applied at this step. One thing we would like to note, is that the dataset includes chest X-rays exclusively from Beth Israel Deaconess Medical Center in Boston, MA. With more time and resources, in order to provide better generalization it would be beneficial to include more diverse scans collected from different hospitals in different parts of the world. 
+
+### Segmentation Mask Labels
+For the segmentation labels, we used the CheXmask database (https://github.com/ngaggion/CheXmask-Database), which provides separate binary masks for the heart and lungs corresponding to each chest X-ray image.
+<img width="718" alt="Screenshot 2025-05-09 at 4 08 18 PM" src="https://github.com/user-attachments/assets/53e8ebd6-afb1-4f86-821e-bcb4f234fc9b" />
 
 
 ## Masked Segmentation 
