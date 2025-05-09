@@ -10,8 +10,8 @@ Our main objective was to accurately segment and isolate the heart and lungs fro
 
 <br> [Presentation Slides](https://docs.google.com/presentation/d/1lrFUmw1toBuzCr4wEwi2cEgJF9aRI2ZorvTLPGRc6zQ/edit?usp=sharing)
 
-## Dataset 
-For training and validation purposes, we used the [MIMIC_CXR](https://physionet.org/content/mimic-cxr/2.1.0/) dataset. This is a publicly available set containing over 370,000 chest x-ray scans corresponding to over 250,000 radiologist studies. We used a random subset of around 500 due to timing constraints, with a train/validation/test split of 80/15/5 which was randomly selected within the subset. One thing we would like to note, is that the dataset includes chest X-rays exclusively from Beth Israel Deaconess Medical Center in Boston, MA. With more time and resources, in order to provide better generalization it would be beneficial to include more diverse scans collected from different hospitals in different parts of the world. 
+## Dataset  
+For training and validation purposes, we used the [MIMIC_CXR](https://physionet.org/content/mimic-cxr/2.1.0/) dataset. This is a publicly available set containing over 370,000 chest x-ray scans corresponding to over 250,000 radiologist studies. We used a random subset of around 500 due to timing constraints, with a train/validation/test split of 80/15/5 which was randomly selected within the subset. In preprocessing, images were all converted to greyscale and resized to a fixed resolution of 512x512 pixels. Normalization and tensor conversion were also applied at this step. One thing we would like to note, is that the dataset includes chest X-rays exclusively from Beth Israel Deaconess Medical Center in Boston, MA. With more time and resources, in order to provide better generalization it would be beneficial to include more diverse scans collected from different hospitals in different parts of the world. 
 
 
 ## Masked Segmentation 
