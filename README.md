@@ -26,23 +26,22 @@ The CTR is computed by measuring the diameter of the chest and the diameter of t
   
 ## Results 
 Based on the model evalutation, here are our results:
+
 ### Hyperparameters
 #### Dataset / DataLoader
 input_size: (512, 512)
 batch_size: 8
 
 #### Training schedule
-epochs: 30
+Epochs: 30
 Training/validation/test split: 80 % / 15 % / 5 % 
 
 #### Model architecture
-
 n_channels: 1 (grayscale input)
 n_classes: 3 (background, lung, heart)
 Encoder feature sizes: [128, 256, 512, 1024]
 Bottleneck channels: 1024→2048
 Attention intermediate channel: half of each decoder feature size (F_int = f // 2)
-
 #### Optimization
 Optimizer: Adam
 Learning rate (lr): 1 × 10⁻⁴
