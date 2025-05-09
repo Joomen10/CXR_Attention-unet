@@ -70,7 +70,8 @@ Out of the 474 X-rays we analyzed, 233 were known to be positive for cardiomegal
 
 ### Project Structure
   
-/
+
+```
 ├── CheXmask-Database/        # External repo of pixel-level heart & lung masks
 │   └── …
 ├── MIMIC-preprocessing/      # Scripts to normalize & resize raw MIMIC-CXR images
@@ -90,7 +91,7 @@ Out of the 474 X-rays we analyzed, 233 were known to be positive for cardiomegal
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project overview & structure
 └── LICENSE                   # License information
-
+```
 
 
 Our ROC curve yields an AUC of .787, which indicates a good separation. We pick the Youden-J optimum at CTR= .573, shown on the curve as the red dot, which balances sensitivity and specificity. At that cutoff, the model scores a precision of .803 and a recall of .825 for classification of cardiomegaly. Under our project's circumstances, optimizing recall reflected the priority of catching as many true cardiomegaly cases as possible. 
