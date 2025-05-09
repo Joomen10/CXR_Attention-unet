@@ -17,10 +17,9 @@ For training and validation purposes, we used the [MIMIC_CXR](https://physionet.
 
 ### Segmentation Mask Labels
 For the ground truth segmentation labels, we used the [CheXmask database](https://github.com/ngaggion/CheXmask-Database), which provides separate binary masks for the heart and lungs corresponding to each chest X-ray image.
-<img width="718" alt="Screenshot 2025-05-09 at 4 08 18 PM" src="https://github.com/user-attachments/assets/53e8ebd6-afb1-4f86-821e-bcb4f234fc9b" />
+<img width="957" alt="Screenshot 2025-05-09 at 4 16 32 PM" src="https://github.com/user-attachments/assets/25993268-7577-4b38-b0f8-ef5931c2e36e" />
 
 
-## Masked Segmentation 
 Our model takes an input of a chest X-ray and outputs a segmented mask, where there are three possible labels for any given pixel: lung, heart, and background. On the left is an example of one of our inputs before the model's prediction, on the right is the model's output.
 
 <img width="312" alt="Screenshot 2025-05-08 at 4 24 11 PM" src="https://github.com/user-attachments/assets/0373bac4-186b-40a6-9e0c-e131189e66f7" /><img width="312" alt="Screenshot 2025-05-08 at 4 23 45 PM" src="https://github.com/user-attachments/assets/7348f2f5-9862-49b0-aad0-5c853543def6" />
